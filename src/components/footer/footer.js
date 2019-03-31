@@ -4,22 +4,30 @@ import s from "./footer.module.scss"
 
 const Footer = () => (
   <footer className={s.container}>
-    Made by{" "}
+    Made by
     <a
       href="https://pedromarques.me/"
       target="_blank"
       rel="noopener noreferrer"
     >
       Pedro
-    </a>{" "}
-    and{" "}
+    </a>
+    ,
     <a
       href="https://www.linkedin.com/in/rafamotta/"
       target="_blank"
       rel="noopener noreferrer"
     >
       Rafael
-    </a>{" "}
+    </a>
+    and
+    <a
+      href="https://www.linkedin.com/in/paventuri/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Paulo
+    </a>
     in Munich, Germany
   </footer>
 )

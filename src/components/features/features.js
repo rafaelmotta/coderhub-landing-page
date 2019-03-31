@@ -10,7 +10,7 @@ const items = [
     description: "Easily and conveniently show your GitHub projects.",
   },
   {
-    img: assets.ph,
+    img: assets.codePen,
     title: "Your Pens",
     description:
       "Showcase your CodePen’s Pens and impress other developers and potential employers.",
