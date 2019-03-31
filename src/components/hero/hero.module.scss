@@ -29,9 +29,13 @@
     margin-right: 36px;
   }
 
-  a,
-  a:hover {
+  a {
     color: #585858;
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
   }
 
   i {

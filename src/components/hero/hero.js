@@ -47,7 +47,7 @@ const Hero = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa fal-facebook" />
+            <i className="fa fa-facebook-square" />
             Share on Facebook
           </a>
         </div>
@@ -57,7 +57,7 @@ const Hero = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa fal-facebook" />
+            <i className="fa fa-twitter" />
             Share on Twitter
           </a>
         </div>

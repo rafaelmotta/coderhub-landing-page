@@ -3,7 +3,7 @@ import * as React from "react"
 import s from "./footer.module.scss"
 
 const Footer = () => (
-  <footer className={s.container}>
+  <footer className={s.footerContainer}>
     Made by&nbsp;
     <a
       href="https://pedromarques.me/"
