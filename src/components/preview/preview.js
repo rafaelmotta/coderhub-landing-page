@@ -12,7 +12,7 @@ const Preview = () => (
           query {
             placeholderImage: file(relativePath: { eq: "codehub.png" }) {
               childImageSharp {
-                fluid(maxWidth: 840) {
+                fluid(maxWidth: 960) {
                   ...GatsbyImageSharpFluid
                 }
               }
