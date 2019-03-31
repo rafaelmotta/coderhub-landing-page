@@ -30,9 +30,6 @@ function SEO({ name, description, lang, meta, keywords, title }) {
   const metaDescription = description || site.siteMetadata.description
   const { url, image } = site
 
-  console.log("-----------")
-  console.log(site)
-
   return (
     <Helmet
       htmlAttributes={{
@@ -56,7 +53,7 @@ function SEO({ name, description, lang, meta, keywords, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `CoderHub | All-in-one personal website builder for developers`,
         },
         {
           property: `og:description`,
@@ -64,7 +61,7 @@ function SEO({ name, description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: image,
+          content: "https://i.imgur.com/QLLkBet.png",
         },
         {
           property: `og:url`,
