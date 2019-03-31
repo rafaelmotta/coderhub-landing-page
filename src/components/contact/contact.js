@@ -3,7 +3,6 @@ import * as React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import classnames from "classnames"
-import image from "./assets/contact.png"
 import s from "./contact.module.scss"
 
 const Contact = () => (

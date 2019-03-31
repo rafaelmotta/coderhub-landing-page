@@ -3,7 +3,6 @@ import * as React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import s from "./styles.module.scss"
-import image from "./assets/hero-secondary.png"
 
 const HeadlineSecondary = () => (
   <div className={s.headlineContainer} id="headline-secondary">
