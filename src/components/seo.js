@@ -93,7 +93,7 @@ function SEO({ name, description, lang, meta, keywords, title }) {
         },
         {
           property: `twitter:image`,
-          content: image,
+          content: "https://i.imgur.com/QLLkBet.png",
         },
       ]
         .concat(

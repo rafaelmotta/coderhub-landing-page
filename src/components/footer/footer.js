@@ -4,7 +4,7 @@ import s from "./footer.module.scss"
 
 const Footer = () => (
   <footer className={s.container}>
-    Made by
+    Made by&nbsp;
     <a
       href="https://pedromarques.me/"
       target="_blank"
@@ -12,7 +12,7 @@ const Footer = () => (
     >
       Pedro
     </a>
-    ,
+    ,&nbsp;
     <a
       href="https://www.linkedin.com/in/rafamotta/"
       target="_blank"
@@ -20,7 +20,7 @@ const Footer = () => (
     >
       Rafael
     </a>
-    and
+    &nbsp;and&nbsp;
     <a
       href="https://www.linkedin.com/in/paventuri/"
       target="_blank"
@@ -28,7 +28,7 @@ const Footer = () => (
     >
       Paulo
     </a>
-    in Munich, Germany
+    &nbsp;in Munich & New York
   </footer>
 )
 

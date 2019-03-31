@@ -1,6 +1,14 @@
-.container {
+@import "./../../styles/bootstrap.scss";
+
+.footerContainer {
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
   font-weight: 300;
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+  .footerContainer {
+    font-size: 14px;
+  }
 }
