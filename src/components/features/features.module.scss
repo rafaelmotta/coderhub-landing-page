@@ -14,7 +14,7 @@
 
 .description {
   @include responsive-font-size(20px);
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.6;
   text-align: center;
   color: #000000;
@@ -28,13 +28,13 @@
 }
 
 .featureItem {
-  padding: 24px;
+  padding: 36px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: 1 2;
   background: #fff;
   width: calc(50% - 30px);
-  height: 230px;
+  height: 245px;
   flex-grow: 1;
   margin: 0 30px 30px 0;
   border: 1px solid #dce6ec;

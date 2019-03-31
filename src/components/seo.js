@@ -19,6 +19,8 @@ function SEO({ name, description, lang, meta, keywords, title }) {
             title
             description
             author
+            image
+            url
           }
         }
       }
@@ -26,7 +28,10 @@ function SEO({ name, description, lang, meta, keywords, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const { image, url } = site.siteMetadata
+  const { url, image } = site
+
+  console.log("-----------")
+  console.log(site)
 
   return (
     <Helmet

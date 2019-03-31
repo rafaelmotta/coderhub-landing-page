@@ -14,7 +14,7 @@
 .subtitle {
   @include responsive-font-size(20px);
   text-align: center;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 30px;
   margin: 0 0 40px;
 }
