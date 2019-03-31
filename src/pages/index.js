@@ -11,7 +11,7 @@ import Contact from "../components/contact"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" />
     <Hero />
     <Preview />
     <HeadlineSecondary />
