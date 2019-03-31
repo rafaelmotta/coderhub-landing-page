@@ -1,0 +1,85 @@
+@import "./../../styles/bootstrap.scss";
+
+.featuresContainer {
+  margin: 56px 0;
+}
+
+.title {
+  @include responsive-font-size(50px);
+  font-weight: 900;
+  text-align: center;
+  color: #000000;
+}
+
+.description {
+  @include responsive-font-size(22px);
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 105px;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.featureItem {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 1 2;
+  background: #fff;
+  width: calc(50% - 30px);
+  height: 230px;
+  flex-grow: 1;
+  margin: 0 30px 30px 0;
+  border: 1px solid #dce6ec;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureImg {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+.featureTitle {
+  @include responsive-font-size(24px);
+  font-weight: 900;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.featureDescription {
+  @include responsive-font-size(18px);
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 48px;
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+  .featureItem,
+  .featureImg {
+    text-align: center;
+  }
+  .featureItem {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+  }
+
+  .featureImg {
+    margin: 0 auto 24px;
+  }
+}
