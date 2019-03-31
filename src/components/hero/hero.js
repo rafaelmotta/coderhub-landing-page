@@ -22,13 +22,19 @@ const Hero = () => (
           >
             <input
               required
-              className={classnames("form-control mr-sm-2", s.inputEmail)}
+              className={classnames(
+                "form-control form-control-lg mr-sm-2",
+                s.inputEmail
+              )}
               type="email"
               name="email"
               placeholder="Your email address"
               aria-label="Get early access"
             />
-            <button className="btn btn-primary my-2 my-sm-0" type="submit">
+            <button
+              className="btn btn-primary btn-lg my-2 my-sm-0"
+              type="submit"
+            >
               Get early access
             </button>
           </form>
@@ -41,8 +47,8 @@ const Hero = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-twitter" />
-            Share on Twitter
+            <i className="fa fal-facebook" />
+            Share on Facebook
           </a>
         </div>
         <div>
@@ -51,8 +57,8 @@ const Hero = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-facebook" />
-            Share on Facebook
+            <i className="fa fal-facebook" />
+            Share on Twitter
           </a>
         </div>
       </div>

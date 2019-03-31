@@ -1,7 +1,7 @@
 @import "./../../styles/bootstrap.scss";
 
 .heroContainer {
-  margin: 120px 0 0 0;
+  margin: 120px 0 56px;
 }
 
 .title {
@@ -12,17 +12,11 @@
 }
 
 .subtitle {
-  @include responsive-font-size(22px);
+  @include responsive-font-size(20px);
   text-align: center;
-  font-weight: 300;
-}
-
-.formContainer {
-  margin-top: 40px;
-}
-
-.emailForm {
-  width: 300px !important;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0 0 40px;
 }
 
 .shareContainer {
@@ -45,9 +39,25 @@
   }
 }
 
+@media only screen and (min-width: map-get($grid-breakpoints, "lg")) {
+  .inputEmail {
+    width: 300px !important;
+  }
+
+  .title {
+    max-width: 815px;
+    margin: 0 auto 16px;
+  }
+
+  .subtitle {
+    max-width: 640px;
+    margin: 0 auto 40px;
+  }
+}
+
 @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
   .heroContainer {
-    margin: 60px 0 0 0;
+    margin-top: 56px;
   }
 
   .formContainer {

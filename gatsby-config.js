@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `CoderHub`,
-    description: `All-in-one personal website builder for developers`,
-    author: `@gatsbyjs`,
+    name: `CoderHub`,
+    title: `CoderHub | All-in-one personal website builder for developers`,
+    url: `https://coderhub.io`,
+    image: `https://i.imgur.com/QLLkBet.png`,
+    description: `Build an elegant and minimalist personal website that showcases your work and contributions around the web in just a few clicks`,
+    author: `Pedro Marques and Rafael Motta`,
   },
   plugins: [
     {
@@ -10,7 +13,9 @@ module.exports = {
       options: {
         trackingId: `UA-137405506-1`,
       },
-    }`gatsby-plugin-react-helmet`,
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-favicon`,
     `gatsby-plugin-flow`,
     `gatsby-plugin-sass`,
     {

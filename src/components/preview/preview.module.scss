@@ -1,11 +1,11 @@
 @import "./../../styles/bootstrap.scss";
 
 .previewContainer {
-  margin: 56px 0 112px;
+  margin-bottom: 140px;
 }
 
 @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
   .previewContainer {
-    margin: 56px 0 56px;
+    margin-bottom: 70px;
   }
 }

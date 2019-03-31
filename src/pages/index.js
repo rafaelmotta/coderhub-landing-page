@@ -12,11 +12,7 @@ import Contact from "../components/contact"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Hero
-      title={`All-in-one personal website builder for developers`}
-      subtitle={`Build an elegant and minimalist personal website that showcases your work
-      and contributions around the web in just a few clicks.`}
-    />
+    <Hero />
     <Preview />
     <HeadlineSecondary />
     <Features />

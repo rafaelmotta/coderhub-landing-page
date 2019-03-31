@@ -9,7 +9,7 @@ const Contact = () => (
   <section className={s.contactContainer} id="contact">
     <div className="container">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-5">
           <StaticQuery
             query={graphql`
               query {
@@ -27,6 +27,7 @@ const Contact = () => (
             )}
           />
         </div>
+        <div className="col-md-1" />
         <div className="col-md-6">
           <div className={s.formContainer}>
             <h3 className={s.title}>Did we get your attention?</h3>
@@ -34,7 +35,7 @@ const Contact = () => (
               Then get notified about updates and be the first get early access
               to CoderHub
             </p>
-            <div className={s.formContainer}>
+            <div>
               <form
                 action="https://getform.io/f/e098dc5a-2b50-48df-9522-b2f560cd6db0"
                 method="POST"
@@ -42,13 +43,19 @@ const Contact = () => (
               >
                 <input
                   required
-                  className={classnames("form-control mr-sm-2", s.inputEmail)}
+                  className={classnames(
+                    "form-control form-control-lg mr-sm-2",
+                    s.inputEmail
+                  )}
                   type="email"
                   name="email"
                   placeholder="Your email address"
                   aria-label="Get early access"
                 />
-                <button className="btn btn-primary my-2 my-sm-0" type="submit">
+                <button
+                  className="btn btn-primary btn-lg my-2 my-sm-0"
+                  type="submit"
+                >
                   Get early access
                 </button>
               </form>

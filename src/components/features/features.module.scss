@@ -6,17 +6,19 @@
 
 .title {
   @include responsive-font-size(50px);
+  margin-bottom: 16px;
   font-weight: 900;
   text-align: center;
   color: #000000;
 }
 
 .description {
-  @include responsive-font-size(22px);
+  @include responsive-font-size(20px);
   font-weight: normal;
+  line-height: 1.6;
   text-align: center;
   color: #000000;
-  margin-bottom: 105px;
+  margin: 0 0 56px;
 }
 
 .featuresList {
@@ -61,9 +63,20 @@
 
 .featureDescription {
   @include responsive-font-size(18px);
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   margin-bottom: 48px;
+}
+
+@media only screen and (min-width: map-get($grid-breakpoints, "lg")) {
+  .featuresContainer {
+    margin: 140px 0 140px;
+  }
+
+  .description {
+    max-width: 815px;
+    margin: 0 auto 56px;
+  }
 }
 
 @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
